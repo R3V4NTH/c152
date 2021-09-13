@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <script src="./base.js"></script>
+    <script src="./car.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-camera
+        id="camera"
+        wasd-controls="enabled,false"
+        position="0 60 250"></a-camera>
+      
+      <a-entity
+        id="base" 
+        base></a-entity>
+      
+      <a-entity 
+        id="car-model" 
+        car-model></a-entity>
+    </a-scene>
+  </body>
+</html>
